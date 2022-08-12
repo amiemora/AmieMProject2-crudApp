@@ -7,6 +7,8 @@ const mongoose = require ('mongoose');
 const app = express ();
 const db = mongoose.connection;
 require('dotenv').config()
+const Movie = require('./models/movieSchema.js')
+const movieData = require('./models/movieData.js');
 //___________________
 //Port
 //___________________
@@ -46,6 +48,12 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 
 //___________________
 // Routes
+
+Movie.create(movieData, (err, addMovies)=>{
+    console.log('test added data.')
+})
+
+
 //___________________
 //localhost:3000
 app.get('/' , (req, res) => {
