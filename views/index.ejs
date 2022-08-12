@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-</head>
+    <head>
+        <%- include ('./partials/head.ejs') %>
+    </head>
 <body>
-    
+   <div>
+        <%- include ('./partials/header.ejs') %>  <br>
+        <p class="intro">
+            ARE YOU A FILM ENTHUSIAST?<br><br>
+            WE'VE GOT A LIST JUST FOR YOU <br>
+            SEE MOVIES BELOW... <br>
+        </p>
+        <% for(let i = 0; i < movies.length; i ++){ %>
+        <div class="card mb-3 shadow-lg p-3 mb-5 bg-body rounded container-fluid" style="max-width: 540px; max-height: 334px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="<%=movies[i].image%>" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title"><%=movies[i].title%></h5>
+                  <p class="card-text"><%=movies[i].description%></p>
+                  <h6><%=movies[i].director%></h6> 
+                  <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                    <a href="/movies/<%=movies[i]._id%>"><button class="btn btn-outline-dark">Watch</button></a>
+                    <a href="/movies/<%=movies[i]._id%>/edit"><button class="btn btn-outline-dark">Edit</button></a>
+                    <form action="/movies/<%=movies[i]._id%>?_method=DELETE" method="POST">
+                        <a><button class="btn btn-outline-dark">Watched</button></a>
+                      </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <% } %>
+   </div>
 </body>
 </html>
+
+

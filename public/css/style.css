@@ -1,0 +1,46 @@
+.add {
+    margin-left: 2em;
+}
+.dropdown {
+    margin-left: 2em;
+}
+.intro {
+    text-align: center;
+    margin-bottom: 2em;
+}
+.card {
+    display: inline-block;
+    margin-left: 4em;
+}
+.add-h2 {
+    margin-top: 1.5em;
+    font-family: 'Aboreto', cursive;
+}
+a {
+    text-decoration: none;
+}
+.intro {
+    font-size: 2.5em;
+    font-family: 'Aboreto', cursive;
+}
+.show-title {
+    text-align: center;
+    
+}
+.show-item {
+    text-align: center;
+}
+.back-btn {
+    text-align: center;
+}
+.show-img {
+    margin-top: 2em;
+}
+.h3-update {
+    font-family: 'Aboreto', cursive; 
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+}
+.update-btn {
+    margin-top: 1.5em;
+}

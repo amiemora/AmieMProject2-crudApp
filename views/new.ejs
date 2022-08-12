@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-</head>
+    <%- include ('./partials/head.ejs') %>
+
 <body>
-    
+    <div>
+        <%- include ('./partials/header.ejs') %>
+       
+        <div class="container-sm form-new">
+            <form class="row g-3" action="/movies" method="POST">
+                <h2 class="add-h2"><em> Add Movie?</em><br>
+                    Yes! Please help us expand our list of recommendations!<br><br>
+                Fill out the form below to see your movie at the end of the list.</h2>
+                <div class="col-md-5">
+                  <label  class="form-label">Title</label>
+                  <input type="text" class="form-control" name="title" placeholder="Movie Title">
+                </div>
+                <div class="col-md-5">
+                  <label  class="form-label">Genre</label>
+                  <input type="text" class="form-control"  name="genre" placeholder="Crime/Drama">
+                </div>
+                <div class="col-md-5">
+                    <label  class="form-label">Director</label>
+                    <input type="text" class="form-control"  name="director" placeholder="First Last">
+                  </div>
+                  <div class="col-md-5">
+                    <label class="form-label">Year</label>
+                    <input type="text" class="form-control" name="year" placeholder="1999">
+                  </div>
+                  <div class="col-md-3">
+                    <label class="form-label">Stream</label>
+                    <input type="text" class="form-control" name="stream" placeholder="Netflix: Subscription">
+                  </div>
+                  <div class="col-md-3">
+                    <label class="form-label">Stream</label>
+                    <input type="text" class="form-control" name="streamTwo" placeholder="Vudu: $3.99">
+                  </div>
+                  <div class="col-md-3">
+                    <label  class="form-label">Stream</label>
+                    <input type="text" class="form-control" name="streamThree" placeholder="Apple TV: $3.99">
+                  </div>
+                <div class="col-10">
+                  <label  class="form-label">Movie Cover</label>
+                  <input type="text" class="form-control" name="image" placeholder="https://cdn.europosters.eu/image/750/plastic-frame-the-dark-knight-joker-gun-i23667.jpg">
+                </div>
+                <div class="col-10">
+                    <label  class="form-label">Movie Description</label>
+                    <input type="text" class="form-control" name="description" placeholder="1-2 Sentences.">
+                  </div>
+                <div class="col-12">
+                  <input type="submit" class="btn btn-outline-dark" value="Submit">
+                </div>
+                
+              </form>
+        </div>
+    </div>
 </body>
 </html>
