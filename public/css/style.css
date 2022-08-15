@@ -59,6 +59,7 @@ a {
 @media screen and (max-width:767px){
     .card {
         display: flex;
+        align-items: center;
         flex-wrap: wrap;
         max-width: 150px;;
     } 
@@ -82,6 +83,12 @@ a {
 @media screen and (max-width: 1820px){
     .card{
         margin-left: 1em;
+        align-items: center;
     }
 }
 
+@media screen and (max-width: 300px) {
+    .card {
+        max-width: 100px;
+    }
+}
