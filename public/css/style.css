@@ -93,3 +93,18 @@ a {
         max-width: 100px;
     }
 }
+
+.fa-clapperboard {
+    font-size: 2.5em;
+    margin-left: .5em;
+}
+.paramount {
+    max-width: 26px;
+
+}
+.vudu {
+    max-width: 27px;
+}
+.starz {
+    max-width: 26px;
+}
