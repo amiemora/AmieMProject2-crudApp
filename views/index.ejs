@@ -5,12 +5,14 @@
     </head>
 <body>
    <div>
-        <%- include ('./partials/header.ejs') %>  <br>
-        <p class="intro">
-            ARE YOU A FILM ENTHUSIAST?<br><br>
-            WE'VE GOT A LIST JUST FOR YOU. <br>
-            SEE MOVIES BELOW... <br>
-        </p>
+        <%- include ('./partials/header.ejs') %>  
+        <div>
+            <p class="intro">
+                ARE YOU A FILM ENTHUSIAST?<br><br>
+                WE'VE GOT A LIST JUST FOR YOU. <br>
+                SEE MOVIES BELOW... <br>
+            </p>
+        </div>
         <% for(let i = 0; i < movies.length; i ++){ %>
         <div class="card mb-3 shadow-lg p-3 mb-5 bg-body rounded container-xs" style="max-width: 540px; max-height: 334px;">
             <div class="row g-0">

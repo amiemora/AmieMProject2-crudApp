@@ -73,7 +73,9 @@ a {
         max-width: 95px;
         max-height: 35px;
     }
-  
+    .intro {
+        font-size: 1.7em;
+    }
 }
 
 @media screen and (max-width: 1820px){
