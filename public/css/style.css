@@ -59,9 +59,10 @@ a {
 @media screen and (max-width:767px){
     .card {
         display: flex;
-        align-items: center;
+        align-content: center;
         flex-wrap: wrap;
-        max-width: 150px;;
+        width: 55vw;
+        
     } 
     .card img {
         max-width: 135px;
