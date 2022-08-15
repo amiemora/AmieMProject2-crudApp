@@ -53,6 +53,47 @@ app.use(methodOverride('_method')) // allow POST, PUT and DELETE from a form
 //     console.log('test added data.')
 // })
 
+// Action & Adventure Route
+app.get('/movies/action', (req,res)=>{
+    Movie.find({}, (err, actionAdv)=>{
+        res.render('action.ejs', {movies: actionAdv})
+    })
+})
+
+// History & Biography Route
+app.get('/movies/history', (req,res)=>{
+    Movie.find({}, (err, historyMovie)=>{
+        res.render('history.ejs', {movies: historyMovie})
+    })
+})
+
+// Thiller Route
+app.get('/movies/thriller', (req,res)=>{
+    Movie.find({}, (err, thrillerMovie)=>{
+        res.render('thriller.ejs', {movies: thrillerMovie})
+    })
+})
+
+// Comedy Route 
+app.get('/movies/comedy', (req,res)=>{
+    Movie.find({}, (err, comedyMovie)=>{
+        res.render('comedy.ejs', {movies: comedyMovie})
+    })
+})
+
+//Crime ROute
+app.get('/movies/crime', (req,res)=>{
+    Movie.find({}, (err, crimeMovie)=>{
+        res.render('crime.ejs', {movies: crimeMovie})
+    })
+})
+
+//Romance Route
+app.get('/movies/romance', (req,res)=>{
+    Movie.find({}, (err, romanceMovie)=>{
+        res.render('romance.ejs', {movies: romanceMovie})
+    })
+})
 
 
 app.get('/movies/new', (req,res)=>{
@@ -82,6 +123,8 @@ app.get('/movies', (req,res) =>{
         res.render('index.ejs', {movies: allMovies})
     })
 })
+
+
 
 app.get('/movies/:id', (req,res)=>{
     Movie.findById(req.params.id, (err, foundMovie)=>{

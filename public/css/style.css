@@ -44,3 +44,41 @@ a {
 .update-btn {
     margin-top: 1.5em;
 }
+.genre-title {
+    font-family: 'Aboreto', cursive;
+    margin-top: 2em;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+.card:hover {
+    transform: scale(1.08);
+}
+
+
+@media screen and (max-width:767px){
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 150px;;
+    } 
+    .card img {
+        max-width: 135px;
+       
+    }
+    .card-body p, h6{
+        
+        display: none;
+    }
+    button {
+        max-width: 95px;
+        max-height: 35px;
+    }
+  
+}
+
+@media screen and (max-width: 1820px){
+    .card{
+        margin-left: 1em;
+    }
+}
+

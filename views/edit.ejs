@@ -6,7 +6,7 @@
         <%- include ('./partials/header.ejs') %>
         <div class="container-md">
             <form action="/movies/<%=movies._id%>?_method=PUT" method="POST">
-                <h3 class="h3-update">Did a streaming option change? Update it Here</h3>
+                <h3 class="h3-update">Did a streaming option change? <br><br> Update it Here</h3>
                 <h4>Movie: <%=movies.title%></h4>
                 <div class="col-md-3">
                     <label class="form-label">Stream</label>

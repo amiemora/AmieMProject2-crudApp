@@ -8,11 +8,11 @@
         <%- include ('./partials/header.ejs') %>  <br>
         <p class="intro">
             ARE YOU A FILM ENTHUSIAST?<br><br>
-            WE'VE GOT A LIST JUST FOR YOU <br>
+            WE'VE GOT A LIST JUST FOR YOU. <br>
             SEE MOVIES BELOW... <br>
         </p>
         <% for(let i = 0; i < movies.length; i ++){ %>
-        <div class="card mb-3 shadow-lg p-3 mb-5 bg-body rounded container-fluid" style="max-width: 540px; max-height: 334px;">
+        <div class="card mb-3 shadow-lg p-3 mb-5 bg-body rounded container-xs" style="max-width: 540px; max-height: 334px;">
             <div class="row g-0">
               <div class="col-md-4">
                 <img src="<%=movies[i].image%>" class="img-fluid rounded-start" alt="...">
