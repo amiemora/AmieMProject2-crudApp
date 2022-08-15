@@ -11,6 +11,7 @@
 .card {
     display: inline-block;
     margin-left: 4em;
+    transition: 0.5s all ease-in-out;
 }
 .add-h2 {
     margin-top: 1.5em;
