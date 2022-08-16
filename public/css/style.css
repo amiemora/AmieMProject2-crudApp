@@ -86,12 +86,17 @@ a {
         margin-left: 1em;
         align-items: center;
     }
+   iframe {
+        max-width: 90vw;
+        max-height: 55vh;
+   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 390px) {
     .card {
         max-width: 100px;
     }
+  
 }
 
 .fa-clapperboard {
@@ -125,4 +130,7 @@ a {
 iframe {
     justify-content: center;
     margin-top: 2em;
+}
+.watched {
+    display: none;
 }
