@@ -48,9 +48,10 @@
                   <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
                     <a href="/movies/<%=movies[i]._id%>"><button class="btn btn-outline-dark">Watch</button></a>
                     <a href="/movies/<%=movies[i]._id%>/edit"><button class="btn btn-outline-dark">Edit</button></a>
+                    <a href="/movies/<%=movies[i]._id%>/trailer"><button class="btn btn-outline-dark">Trailer</button></a>             
                     <form action="/movies/<%=movies[i]._id%>?_method=DELETE" method="POST">
                         <a><button class="btn btn-outline-dark">Watched</button></a>
-                      </form>
+                    </form>
                   </div>
                 </div>
               </div>

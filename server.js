@@ -53,6 +53,11 @@ app.use(methodOverride('_method')) // allow POST, PUT and DELETE from a form
 //     console.log('test added data.')
 // })
 
+app.get('/movies/:id/trailer', (req,res)=>{
+    Movie.findById(req.params.id, (err, trailerMovie)=>{
+        res.render('trailer.ejs', {movies: trailerMovie})
+    })
+})
 
 // Clickable Picture Route for Iphone 
 app.get('/movies/:id/phoneshow', (req,res)=>{
