@@ -9,7 +9,8 @@ const movieSchema = new mongoose.Schema({
     streamTwo: {type: String},
     streamThree: {type: String},
     year: {type: String},
-    description: {type: String}
+    description: {type: String},
+    trailer: {type: String}
 })
 
 const Movie = mongoose.model('Movie', movieSchema)
