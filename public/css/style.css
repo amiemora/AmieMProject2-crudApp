@@ -99,15 +99,26 @@ a {
     margin-left: .5em;
 }
 .paramount {
-    max-width: 26px;
+    max-width: 24px;
 
 }
 .vudu {
-    max-width: 27px;
+    max-width: 24px;
 }
 .starz {
-    max-width: 26px;
+    max-width: 24px;
 }
 .amazon {
-    max-width: 26px;
+    max-width: 24px;
+}
+.logo {
+    display: inline;
+    margin: 1em;
+    transition: 0.5s all ease-in-out;
+}
+.logo:hover {
+    opacity: .25;
+}
+.fa-apple {
+    max-width: 24px;
 }

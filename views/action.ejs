@@ -5,10 +5,13 @@
 </head>
 <body>
     <div>
-        <%- include ('./partials/header.ejs') %>
+        <header>
+            <%- include ('./partials/header.ejs') %>
+        </header>
         <div>
+            
             <h1 class="genre-title"> Action/Adventure Movies</h1>
-           
+            
             <% for(let i = 0; i < movies.length; i++){ %>
                 <% if(movies[i].genre === "Action" || movies[i].genre === "Adventure"){ %>
                     <div class="card mb-3 shadow-lg p-3 mb-5 bg-body rounded container-fluid" style="max-width: 540px; max-height: 334px;">
