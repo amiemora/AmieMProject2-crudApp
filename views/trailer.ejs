@@ -7,6 +7,7 @@
         <%- include ('./partials/header.ejs') %>
         <div class="show-info container-sm">
             <iframe width="830" height="550" src="<%=movies.trailer%>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <a href="/movies/<%=movies._id%>/phoneshow"><button class="btn btn-outline-dark trailer-back">Back</button></a>
         </div>
     </div>
 </body>
